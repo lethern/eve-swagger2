@@ -95,7 +95,7 @@
       var returnType = GetCharactersCharacterIdOk;
 
       return this.apiClient.callApi(
-        '/v4/characters/{character_id}/', 'GET',
+        '/v5/characters/{character_id}/', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -820,7 +820,7 @@
       var returnType = 'Number';
 
       return this.apiClient.callApi(
-        '/v4/characters/{character_id}/cspa/', 'POST',
+        '/v5/characters/{character_id}/cspa/', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

@@ -69,8 +69,6 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('alliance_id'))
         obj.allianceId = ApiClient.convertToType(data['alliance_id'], 'Number');
-      if (data.hasOwnProperty('ancestry_id'))
-        obj.ancestryId = ApiClient.convertToType(data['ancestry_id'], 'Number');
       if (data.hasOwnProperty('birthday'))
         obj.birthday = ApiClient.convertToType(data['birthday'], 'Date');
       if (data.hasOwnProperty('bloodline_id'))
@@ -100,12 +98,6 @@
    * @member {Number} allianceId
    */
   exports.prototype.allianceId = undefined;
-
-  /**
-   * ancestry_id integer
-   * @member {Number} ancestryId
-   */
-  exports.prototype.ancestryId = undefined;
 
   /**
    * Creation date of the character
